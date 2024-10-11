@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- Link per Font Awesome -->
+<style>
+  body {
+    background-color: #333333; /* Sfondo del sito */
+    color: #e0e0e0; /* Colore del testo */
+  }
+
+  .w3-top {
+    background-color: #333333; /* Barra in alto grigio molto scuro */
+  }
+  
+  .w3-bar a {
+    color: #e0e0e0; /* Colore del testo nella navbar */
+    text-decoration: none;
+  }
+  
+      .w3-bar a:hover {
+    transition: transform 0.3s;
+    transform: scale(1.05);
+  }
+
+  .w3-light-grey {
+    background-color: #333; /* Colore dei box sotto le immagini */
+  }
+
+  .video-popup {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 1);
+    justify-content: center;
+    align-items: center;
+  }
+
+  .video-content {
+    position: relative;
+    width: 80%;
+    max-width: 800px;
+  }
+
+  .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: grey; /* Cambiato da rosso a grigio */
+    border: none;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+  }
+
+  .icon-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background-color: lightgrey; /* Aggiunta di un colore di sfondo per le icone */
+    border-radius: 50%; /* Rende l'icona circolare */
+    text-decoration: none; /* Rimuove sottolineatura */
+    color: black; /* Colore del testo */
+    font-size: 24px; /* Dimensione dell'icona */
+    transition: lightgrey 0.3s; /* Aggiunto effetto di transizione */
+  }
+
+  .icon-button:hover {
+    background-color: #e0e0e0; /* Cambia colore al passaggio del mouse */
+    transition: transform 0.3s;
+    transform: scale(1.05);
+  }
+
+  .w3-display-container {
+    transition: transform 0.3s; /* Aggiunto effetto di transizione */
+  }
+
+  .w3-display-container:hover {
+    transform: scale(1.05); /* Effetto di ingrandimento al passaggio del mouse */
+  }
+
+  .w3-container {
+    transition: background-color 0.3s; /* Aggiunto effetto di transizione */
+    height: 150px;; /* Imposta l'altezza della descrizione */
+    text-align: justify; /* Giustifica il testo */
+  }
+
+  .w3-container:hover {
+    background-color: #444; /* Cambia colore di sfondo al passaggio del mouse */
+    transition: transform 0.3s;
+    transform: scale(1.05);
+  }
+
+</style>
+</head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-wide w3-padding w3-card">
+    <a href="#home" class="w3-bar-item "><b>Virginia</b> Ermondi</a>
+    <!-- Float links to the right. Hide them on small screens -->
+    <div class="w3-right w3-hide-small">
+      <a href="#home" class="w3-bar-item">Home</a> <!-- Aggiunta della sezione Home -->
+      <a href="#projects" class="w3-bar-item">Projects</a>
+      <a href="#about" class="w3-bar-item">About</a>
+      <a href="#contact" class="w3-bar-item">Contacts</a>
+    </div>
+  </div>
+</div>
+
+<!-- Home Section -->
+<header class="w3-display-container w3-content w3-wide" style="max-width:1500px;" id="home">
+  <img class="w3-image" src="/SfondoHome.jpeg" width="1500" height="800">
+  <div class="w3-display-middle w3-margin-top w3-center">
+    <h1 class="w3-xxlarge w3-text-white"><span class="w3-padding w3-black w3-opacity-min"><b>My</b></span> <span class="w3-hide-small w3-text-light-grey">Portfolio</span></h1>
+  </div>
+</header>
+
+<!-- Page content -->
+<div class="w3-content w3-padding" style="max-width:1564px">
+
+<!-- Project Section -->
+<div class="w3-padding-32" id="projects">
+  <h3 class="w3-border-bottom w3-padding-16">Projects</h3>
+</div>
+
+<!-- KV62 -->
+<div class="w3-row-padding">
+  <div class="w3-col l4 m6 w3-margin-bottom">
+    <div class="w3-display-container">
+      <img src="/KV62.jpg" alt="House" style="width:100%" onclick="openVideo('https://www.youtube.com/embed/Kr5eaolf_9w')">
+    </div>
+    <div class="w3-container w3-padding-16" style="height: 370px;">
+      <h4>KV62: Discovering Tutankhamon</h4>
+      <p>Created for the Virtual Reality course 2023-2024 at Politecnico di Torino, this is a Desktop-VR application (with potential developments for headset) that allows users to explore the tomb of Tutankhamun, engaging in interactive and active learning through various features.
+      The project was developed with Unity. <br>The app is available <a href="https://kv62discover.itch.io/kv62-discovering-tutankhamon" target="_blank">here</a>.<br>
+       <a href="https://drive.google.com/file/d/1gKDqLYOQf9Eio-eZMD8Zx8mqS6rpswPj/view?usp=drive_link" target="_blank">Here</a> you can find the italian version of the pitch.</p>
+    </div>
+  </div>
+
+  <!-- SuperSonic -->
+  <div class="w3-col l4 m6 w3-margin-bottom">
+    <div class="w3-display-container">
+      <img src="/SuperSonic.png" alt="House" style="width:100%">
+    </div>
+    <div class="w3-container w3-padding-16" style="height: 370px;">
+      <h4>Super Sonic</h4>
+      <p> "SuperSonic: A Supersonic Social Media Campaign" has been created for the 2023-2024 Future Storytelling course at Politecnico di Torino. The aim was to provide a social media campaign for a Politecnico project funded by the European Union, called "More&Less" (which aims to study sustainable supersonic flight). The campaign was presented directly to the European Union funders.
+
+LinkedIn, TikTok, and X were used as platforms, and the data analysis was done with 4CAT.
+      <a href="https://drive.google.com/file/d/1pj86UtA6a1Uyl8-lZQ7NeAIyQilbGdaz/view?usp=drive_link">Here</a> you can find the final report.</p>
+    </div>
+  </div>
+
+  <!-- ChemChron -->
+  <div class="w3-col l4 m6 w3-margin-bottom">
+    <div class="w3-display-container">
+      <img src="/ChemicalChronicles.png" alt="House" style="width:100%" onclick="openVideo('https://www.youtube.com/embed/fwJb4QYb_0Q')">
+    </div>
+    <div class="w3-container w3-padding-16" style="height: 370px;">
+      <h4>Chemical Chronicles</h4>
+      <p><p>For the 2023-2024 Game Design course at Politecnico di Torino, a pitch for an entire video game (Chemical Chronicles: The Shrinking Adventure) was created (it is available <a href="https://drive.google.com/file/d/19PAP6fnMmGCocmWSrss9_l2YIoKg1onA/view?usp=drive_link">here</a>). Additionally, a prototype was developed using Unity, soon to be available on itch.io. It is a platformer set in a chemistry lab, playable on desktop with keyboard or controller.</p>
+</p>
+    </div>
+  </div>
+</div>
+
+<!-- ElemHands -->
+<div class="w3-row-padding" style="margin-top: 70px;"> <!-- Aggiunto margine qui -->
+  <div class="w3-col l4 m6 w3-margin-bottom">
+    <div class="w3-display-container">
+      <img src="/ElemHands.jpg" alt="House" style="width:100%" onclick="openVideo('https://www.youtube.com/embed/_yOsClm7_KM')">
+    </div>
+    <div class="w3-container w3-padding-16" style="height: 370px;">
+      <h4>ElemHands</h4>
+      <p>ElemHands is a project developed by the student team "LevelUpLab". It is a VR video game currently under development for Meta Quest 3, where simplified sign language is the key to solving a series of puzzles. The preliminary pitch is available <a href="https://drive.google.com/file/d/1xPlHz21JSg3gwRLUGpi7-Y9fsD6Vi4Gf/view?usp=drive_link">here</a>. Unity was used, along with FMOD and the META XR plugin for the audio part.</p>
+    </div>
+  </div>
+
+  <!-- TaleofContour -->
+  <div class="w3-col l4 m6 w3-margin-bottom">
+    <div class="w3-display-container">
+      <img src="/TaleOfContour.jpg" alt="House" style="width:100%" > <!-- Usata l'immagine di Summer House -->
+    </div>
+    <div class="w3-container w3-padding-16" style="height: 370px;">
+      <h4>Tale of Contour</h4>
+      <p><a href="https://youtu.be/7yPsK-LT83Q">This</a> CGI Animated Spot, created by Milford Creative Studio, was partially recreated with Blender for the 2023-2024 Computer Animation course at the Politecnico di Torino. The aim was to utilize all the techniques learned during the course to produce a video at least 30 seconds long that would resemble the original advertisement. The result is available <a href="https://drive.google.com/file/d/16UyccaMtgdJl7UKII9bn6e2XzN9zwjpI/view?usp=drive_link">here</a>.</p>
+    </div>
+  </div>
+</div>
+
+<!-- About Section -->
+<div class="w3-padding-32" id="about">
+  <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">About</h3>
+</div>
+
+<div class="w3-row-padding">
+  <div class="w3-col l4 m6 w3-margin-bottom">
+    <div class="w3-display-container">
+      <img src="/CV.jpg" alt="House" style="width:100%">
+    </div>
+    <div class="w3-container w3-padding-16" style="height: 70px;">
+      <p>
+        <a href="https://drive.google.com/file/d/18GVx1XwZKRUJ1pnZwALVMtc-N0tfhDRi/view?usp=drive_link" target="_blank">Here</a>
+        's my CV and <a href="https://drive.google.com/file/d/1z-CbcJUV54VlDRdNrT8IsKDB3A1h4LHj/view?usp=sharing" target="_blank">here</a> 's my EU CV.
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- Contact Section -->
+<div class="w3-padding-32" id="contact">
+  <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16" style="margin-left: 0.2px;">Contacts</h3> <!-- Allineato a sinistra con margine -->
+
+  <div class="w3-row-padding">
+    <div class="w3-col l12 m6 w3-margin-bottom" style="margin-left: 18px;">
+      <div style="height: 70px; text-align: left;"> <!-- Allineato a sinistra -->
+        <p>Feel free to contact me:</p>
+        <div style="display: flex; justify-content: center; gap: 20px;"> <!-- Centra le icone -->
+          <a href="mailto:virginia.ermondi@gmail.com" class="icon-button">
+            <i class="fa fa-envelope"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/virginiaermondi" target="_blank" class="icon-button">
+            <i class="fa fa-linkedin"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<!-- Video Popup -->
+<div class="video-popup" id="videoPopup">
+  <div class="video-content">
+    <button class="close-btn" onclick="closeVideo()">×</button>
+    <iframe id="videoFrame" width="100%" height="500" src="" frameborder="0" allowfullscreen></iframe>
+  </div>
+</div>
+
+<script>
+  function openVideo(videoUrl) {
+    document.getElementById('videoFrame').src = videoUrl;
+    document.getElementById('videoPopup').style.display = 'flex';
+  }
+
+  function closeVideo() {
+    document.getElementById('videoFrame').src = '';
+    document.getElementById('videoPopup').style.display = 'none';
+  }
+</script>
+
+</body>
+</html>
