@@ -19,6 +19,7 @@ body {
   background-color: #121212;
   color: #f5f5f5;
   margin: 0;
+  scroll-behavior: smooth; /* effetto scroll */
 }
 
 /* ===== Navbar ===== */
@@ -59,6 +60,20 @@ body {
 h3, h4 {
   font-family: 'Montserrat', sans-serif;
   color: #f5f5f5;
+}
+
+h3 {
+  border-color: #ff6f61 !important;
+}
+
+/* Links accent */
+a {
+  color: #ff6f61;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+a:hover {
+  color: #ffa08a;
 }
 
 /* ===== Image hover effect ===== */
@@ -201,8 +216,7 @@ LinkedIn, TikTok, and X were used as platforms, and the data analysis was done w
     </div>
     <div class="w3-container" style="height: 370px;">
       <h4>Chemical Chronicles</h4>
-      <p><p>For the 2023-2024 Game Design course at Politecnico di Torino, a pitch for an entire video game (Chemical Chronicles: The Shrinking Adventure) was created (it is available <a href="https://www.canva.com/design/DAGE6k5DUGc/vR2wcjt9DtShCpkKtWiZgQ/view?utm_content=DAGE6k5DUGc&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hf51e485eba">here</a>). Additionally, a prototype was developed using Unity, available <a href="https://c-est-la-v.itch.io/chemical-chronicles">here</a>. It is a platformer set in a chemistry lab, playable on desktop with keyboard or controller.</p>
-</p>
+      <p>For the 2023-2024 Game Design course at Politecnico di Torino, a pitch for an entire video game (Chemical Chronicles: The Shrinking Adventure) was created (it is available <a href="https://www.canva.com/design/DAGE6k5DUGc/vR2wcjt9DtShCpkKtWiZgQ/view?utm_content=DAGE6k5DUGc&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hf51e485eba">here</a>). Additionally, a prototype was developed using Unity, available <a href="https://c-est-la-v.itch.io/chemical-chronicles">here</a>. It is a platformer set in a chemistry lab, playable on desktop with keyboard or controller.</p>
     </div>
   </div>
 </div>
@@ -216,7 +230,7 @@ LinkedIn, TikTok, and X were used as platforms, and the data analysis was done w
     </div>
     <div class="w3-container" style="height: 370px;">
       <h4>ElemHands</h4>
-      <p>ElemHands is a project developed by the student team "LevelUpLab". It is a VR video game, developed for Meta Quest 3, where simplified sign language is the key to solving puzzles. The preliminary pitch is available <a href="https://www.canva.com/design/DAGXxic6k2w/3bkcPn7Cq3OMgQdN1BFgiw/edit?utm_content=DAGXxic6k2w&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton">here</a>. Unity was used, along with FMOD and the META XR plugin. The prototype was showcased in the Indie Dungeon area at Milan Games Week 2024. </p>
+      <p>ElemHands is a project developed by the student team "LevelUpLab". It is a VR video game, developed for Meta Quest 3, where simplified sign language is the key to solving puzzles. The preliminary pitch is available <a href="https://www.canva.com/design/DAGXxic6k2w/3bkcPn7Cq3OMgQdN1BFgiw/edit?utm_content=DAGXxic6k2w&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton">here</a>. Unity was used, along with FMOD and the META XR plugin. The prototype was showcased in the Indie Dungeon area at Milan Games Week 2024.</p>
     </div>
   </div>
 
@@ -243,6 +257,63 @@ LinkedIn, TikTok, and X were used as platforms, and the data analysis was done w
   </div>
 </div>
 
+<!-- ===== Remaining Projects ===== -->
+<div class="w3-row-padding" style="margin-top: 70px;">
+  <!-- NinjasNet -->
+  <div class="w3-col l4 m6 w3-margin-bottom">
+    <div class="w3-display-container">
+      <img src="NinjasNet.png" alt="NinjasNet" style="width:100%">
+    </div>
+    <div class="w3-container" style="height: 370px;">
+      <h4>NinjasNet</h4>
+      <p>For the Machine Learning for Vision and Multimedia course, a Siamese Neural Network was created to determine, from images of words, whether two words were written by the same author or not.  
+      A detailed report in Italian is available <a href="https://drive.google.com/file/d/1H_m1MfAECfB9ZB8Xx5tGFb2sUFGM4I98/view?usp=drive_link">here</a>.</p>
+    </div>
+  </div>
+
+  <!-- Breastfeeding VR -->
+  <div class="w3-col l4 m6 w3-margin-bottom">
+    <div class="w3-display-container">
+      <img src="BreastfeedingVR1.png" alt="Breastfeeding VR" style="width:100%">
+    </div>
+    <div class="w3-container" style="height: 370px;">
+      <h4>Breastfeeding VR</h4>
+      <p>For my Master's thesis, developed at Ontario Tech University (Canada), I designed a VR application for Meta Quest Pro to teach women correct breastfeeding practices through gamification.  
+      The application was developed for controllers, hand tracking, and physical proxies at both low and high fidelity.  
+      A paper based on this work has been written and submitted for consideration to IEEE VR 2026.</p>
+    </div>
+  </div>
+
+  <!-- Coming Soon -->
+  <div class="w3-col l4 m6 w3-margin-bottom">
+    <div class="w3-display-container">
+      <img src="NewProject.png" alt="Future Project" style="width:100%">
+    </div>
+    <div class="w3-container" style="height: 370px;">
+      <h4>Coming Soon</h4>
+      <p>Another project will be added here soon. Stay tuned!</p>
+    </div>
+  </div>
+</div>
+
+<!-- ===== About Section ===== -->
+<div class="w3-padding-32" id="about">
+  <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">About</h3>
+</div>
+
+<div class="w3-row-padding">
+  <div class="w3-col l4 m6 w3-margin-bottom">
+    <div class="w3-display-container">
+      <img src="CV.jpg" alt="CV" style="width:100%">
+    </div>
+    <div class="w3-container" style="height: 70px;">
+      <p>
+        <a href="https://drive.google.com/file/d/1yOGFR6xAhqZux94zQ_pynHkIgPvULMOE/view?usp=drive_link" target="_blank">Here</a> is my CV.
+      </p>
+    </div>
+  </div>
+</div>
+
 <!-- ===== Contact Section ===== -->
 <div class="w3-padding-32" id="contact">
   <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Contacts</h3>
@@ -261,23 +332,4 @@ LinkedIn, TikTok, and X were used as platforms, and the data analysis was done w
 
 <!-- ===== Video Popup ===== -->
 <div class="video-popup" id="videoPopup">
-  <div class="video-content">
-    <button class="close-btn" onclick="closeVideo()">×</button>
-    <iframe id="videoFrame" width="100%" height="500" src="" frameborder="0" allowfullscreen></iframe>
-  </div>
-</div>
-
-<script>
-function openVideo(videoUrl) {
-  document.getElementById('videoFrame').src = videoUrl;
-  document.getElementById('videoPopup').style.display = 'flex';
-}
-function closeVideo() {
-  document.getElementById('videoFrame').src = '';
-  document.getElementById('videoPopup').style.display = 'none';
-}
-</script>
-
-</body>
-</html>
-
+  <div class
