@@ -155,29 +155,37 @@ a:hover {
   <img class="w3-image" src="SfondoHome.jpeg" width="1500" height="800">
   <div class="w3-display-middle w3-margin-top w3-center">
     <h1 class="w3-text-white" style="line-height:1.2; white-space: nowrap;">
-      <!-- "My" ridotto su mobile -->
-      <span class="w3-padding w3-black w3-opacity-min" style="font-size:3rem;">
-        <b class="my-text">My</b>
-      </span>
+      <!-- "My" con rettangolino responsive -->
+      <span class="my-box w3-black w3-opacity-min"><b class="my-text">My</b></span>
       <!-- "Portfolio" ridotto su mobile -->
-      <span class="w3-text-light-grey">
-        <span class="portfolio-text">Portfolio</span>
-      </span>
+      <span class="w3-text-light-grey"><span class="portfolio-text">Portfolio</span></span>
     </h1>
   </div>
 </header>
 
 <style>
-/* Testo responsive */
+/* Rettangolo e testo responsive */
+.my-box {
+  display: inline-block;
+  padding: 0.5rem 1rem; /* padding desktop di base */
+}
+
+.my-text {
+  font-size: 3rem;
+}
+
+.portfolio-text {
+  font-size: 3rem;
+}
+
+/* Mobile */
 @media screen and (max-width: 600px) {
+  .my-box { padding: 0.2rem 0.5rem !important; } /* rettangolo più piccolo */
   .my-text { font-size: 1.5rem !important; }
   .portfolio-text { font-size: 1.5rem !important; }
 }
-@media screen and (min-width: 601px) {
-  .my-text { font-size: 3rem; }
-  .portfolio-text { font-size: 3rem; }
-}
 </style>
+
 
 <!-- ===== Projects Section ===== -->
 <div class="w3-content w3-padding" style="max-width:1564px">
