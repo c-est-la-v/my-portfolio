@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+c<!DOCTYPE html>
 <html>
 <head>
 <title>Virginia Ermondi - Portfolio</title>
@@ -154,14 +154,30 @@ a:hover {
 <header class="w3-display-container w3-content w3-wide" style="max-width:1500px;" id="home">
   <img class="w3-image" src="SfondoHome.jpeg" width="1500" height="800">
   <div class="w3-display-middle w3-margin-top w3-center">
-    <h1 class="w3-text-white" style="line-height:1.2;">
-      <span class="w3-padding w3-black w3-opacity-min"><b>My</b></span>
-      <!-- Mostra Portfolio sempre, riducendo la dimensione su mobile -->
-      <span class="w3-text-light-grey w3-hide-medium w3-hide-large" style="font-size:1.5rem;">Portfolio</span>
-      <span class="w3-text-light-grey w3-hide-small" style="font-size:3rem;">Portfolio</span>
+    <h1 class="w3-text-white" style="line-height:1.2; white-space: nowrap;">
+      <!-- "My" ridotto su mobile -->
+      <span class="w3-padding w3-black w3-opacity-min" style="font-size:3rem;">
+        <b class="my-text">My</b>
+      </span>
+      <!-- "Portfolio" ridotto su mobile -->
+      <span class="w3-text-light-grey">
+        <span class="portfolio-text">Portfolio</span>
+      </span>
     </h1>
   </div>
 </header>
+
+<style>
+/* Testo responsive */
+@media screen and (max-width: 600px) {
+  .my-text { font-size: 1.5rem !important; }
+  .portfolio-text { font-size: 1.5rem !important; }
+}
+@media screen and (min-width: 601px) {
+  .my-text { font-size: 3rem; }
+  .portfolio-text { font-size: 3rem; }
+}
+</style>
 
 <!-- ===== Projects Section ===== -->
 <div class="w3-content w3-padding" style="max-width:1564px">
